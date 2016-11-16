@@ -1,0 +1,242 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>VinhSang-SpringMVC</groupId>
+  <artifactId>VinhSang-SpringMVC</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <warSourceDirectory>WebContent</warSourceDirectory>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+  <dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+ 		<dependency>
+
+		<groupId>javax.transaction</groupId>
+		
+		<artifactId>jta</artifactId>
+		
+		<version>1.1</version>
+		
+		</dependency>
+		<!-- spring-context which provides core functionality -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.1.6.RELEASE</version>
+		</dependency>
+ 
+		<!-- The spring-aop module provides an AOP Alliance-compliant aspect-oriented 
+			programming implementation allowing you to define -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>4.1.6.RELEASE</version>
+		</dependency>
+ 
+		<!-- The spring-webmvc module (also known as the Web-Servlet module) contains 
+			Spring’s model-view-controller (MVC) and REST Web Services implementation 
+			for web applications -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>4.1.6.RELEASE</version>
+		</dependency>
+ 
+		<!-- The spring-web module provides basic web-oriented integration features 
+			such as multipart file upload functionality and the initialization of the 
+			IoC container using Servlet listeners and a web-oriented application context -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>4.1.6.RELEASE</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-tx</artifactId>
+		    <version>4.1.6.RELEASE</version>
+		</dependency>
+		 <dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-orm</artifactId>
+		    <version>4.1.6.RELEASE</version>
+		  </dependency>
+		
+		
+	
+   
+     
+		
+<!-- https://mvnrepository.com/artifact/jstl/jstl -->
+<dependency>
+    <groupId>jstl</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-api -->
+<dependency>
+    <groupId>org.apache.tiles</groupId>
+    <artifactId>tiles-api</artifactId>
+    <version>3.0.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-core -->
+<dependency>
+   <groupId>org.apache.tiles</groupId>
+   <artifactId>tiles-core</artifactId>
+   <version>3.0.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-jsp -->
+<dependency>
+    <groupId>org.apache.tiles</groupId>
+    <artifactId>tiles-jsp</artifactId>
+    <version>3.0.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-request-api -->
+<dependency>
+    <groupId>org.apache.tiles</groupId>
+    <artifactId>tiles-request-api</artifactId>
+    <version>1.0.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.tiles/tiles-servlet -->
+
+
+<!-- https://mvnrepository.com/artifact/commons-digester/commons-digester -->
+<dependency>
+    <groupId>commons-digester</groupId>
+    <artifactId>commons-digester</artifactId>
+    <version>2.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
+<dependency>
+    <groupId>commons-beanutils</groupId>
+    <artifactId>commons-beanutils</artifactId>
+    <version>1.8.0</version>
+</dependency>
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>1.5.11</version>
+
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.5.11</version>
+    
+</dependency>
+<dependency>  
+   <groupId>org.apache.solr</groupId>  
+   <artifactId>solr-solrj</artifactId>  
+   <version>5.2.1</version>  
+   <exclusions>  
+     <exclusion>  
+       <groupId>org.slf4j</groupId>  
+       <artifactId>slf4j-api</artifactId>  
+     </exclusion>  
+     <exclusion>  
+       <groupId>org.slf4j</groupId>  
+       <artifactId>jcl-over-slf4j</artifactId>  
+     </exclusion>  
+   </exclusions>  
+ </dependency>  
+ 
+ 	
+ 
+  <dependency>
+        <groupId>javax.validation</groupId>
+        <artifactId>validation-api</artifactId>
+        <version>1.0.0.GA</version>
+    </dependency>
+     
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>4.0.1.Final</version>
+    </dependency>
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>4.2.0.Final</version>
+    </dependency>
+    <dependency>
+        <groupId>org.hibernate.common</groupId>
+        <artifactId>hibernate-commons-annotations</artifactId>
+        <version>4.0.1.Final</version>
+        <classifier>tests</classifier>
+    </dependency>
+     
+    <dependency>
+        <groupId>org.hibernate.javax.persistence</groupId>
+        <artifactId>hibernate-jpa-2.0-api</artifactId>
+        <version>1.0.1.Final</version>
+    </dependency>
+    <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-entitymanager</artifactId>
+        <version>4.0.1.Final</version>
+    </dependency>
+ 		 <dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>5.1.29</version>
+  </dependency>
+ 
+  <dependency>
+    <groupId>commons-dbcp</groupId>
+    <artifactId>commons-dbcp</artifactId>
+    <version>1.4</version>
+  </dependency>
+  
+  <dependency>
+    <groupId>commons-pool</groupId>
+    <artifactId>commons-pool</artifactId>
+    <version>1.4</version>
+  </dependency>
+ 
+  <dependency>
+    <groupId>xerces</groupId>
+    <artifactId>xercesImpl</artifactId>
+    <version>2.11.0</version>
+  </dependency>
+<dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>3.0.1</version>
+        <scope>provided</scope>
+</dependency>
+<dependency>
+    	<groupId>com.google.code.gson</groupId>
+    	<artifactId>gson</artifactId>
+    	<version>2.6.2</version>
+	</dependency>
+<dependency>
+    <groupId>com.relops</groupId>
+    <artifactId>snowflake</artifactId>
+    <version>1.1</version>
+</dependency>
+  </dependencies>
+</project>
